@@ -16,7 +16,7 @@ read -p "What is your Exercism API Key?: " apikey
 read -p "Where do you want to store your work? (/Users/USERNAME/workspace): " workdir
 mkdir -p $workdir
 cd $workdir
-wget https://github.com/exercism/cli/releases/download/v1.2.3/exercism-linux-386.tgz
+wget https://github.com/exercism/cli/releases/download/v1.4.0/exercism-darwin-amd64.tgz
 tar -xvf exercism-linux-386.tgz
 echo "export PATH=/usr/local/share/npm/bin:$PATH" >> ~/.bash_profile
 echo "{\"githubUsername\":\"$githubuser\",\"apiKey\":\"$apikey\",\"exercismDirectory\":\"$workdir\",\"hostname\":\"http://exercises.fullstackacademy.com\"}" > ~/.exercism.go
